@@ -1,0 +1,1 @@
+console.log("Learning prisma with typescript")
