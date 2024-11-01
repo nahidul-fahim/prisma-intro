@@ -9,7 +9,7 @@ const paginationSorting = async () => {
         take: 2
     })
 
-    //console.log("Offest paginated data: ", offsetData);
+    //console.log("Offset paginated data: ", offsetData);
 
     // cursor based pagination
     const cursorData = await prisma.post.findMany({
