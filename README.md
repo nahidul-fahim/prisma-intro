@@ -16,4 +16,4 @@ Welcome to the prisma-intro repository! Here, you'll find resources and tutorial
 | Raw queries                         | [https://www.prisma.io/docs/orm/prisma-client/queries/raw-database-access/raw-queries](https://www.prisma.io/docs/orm/prisma-client/queries/raw-database-access/raw-queries)                                      |
 | Prisma Playground                   | [https://playground.prisma.io/](https://playground.prisma.io/)                                                                                                                                                       |
 
-*Thank you*
+*Thank you.*
