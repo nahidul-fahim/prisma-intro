@@ -14,14 +14,21 @@ const main = async () => {
     // });
 
     // create profile
-    const createProfile = await prisma.profile.create({
-        data: {
-            bio: "This is my unique bio",
-            userId: 1
-        }
-    });
+    // const createProfile = await prisma.profile.create({
+    //     data: {
+    //         bio: "This is my unique bio",
+    //         userId: 1
+    //     }
+    // });
 
-    console.log({ createProfile })
+    // create category
+    const createCategory = await prisma.category.create({
+        data: {
+            name: "App development"
+        }
+    })
+
+    console.log({ createCategory });
 
 }
 
