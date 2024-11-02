@@ -22,13 +22,32 @@ const main = async () => {
     // });
 
     // create category
-    const createCategory = await prisma.category.create({
+    // const createCategory = await prisma.category.create({
+    //     data: {
+    //         name: "App development"
+    //     }
+    // })
+
+
+    // create post
+    const createPost = await prisma.post.create({
         data: {
-            name: "App development"
+            title: "This is first post title",
+            content: "First post content is here. And this is world-class content",
+            authorId: 1,
+            postCategory: {
+                create: {
+                    category: {
+                        connect: {
+                            id: 1
+                        }
+                    }
+                }
+            }
         }
     })
 
-    console.log({ createCategory });
+    console.log({ createPost });
 
 }
 
